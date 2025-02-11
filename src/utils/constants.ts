@@ -1,0 +1,1 @@
+export const BASE_URL = import.meta.env.PROD ? 'https://whatsapp-na-nuvem.azurewebsites.net' : 'https://localhost:7212';
