@@ -23,10 +23,10 @@ const useScriptLoader = () => {
       });
     };
 
-    loadScript("/dist/js/custom.js");
-    loadScript("/dist/js/main.js");
-    loadScript("/dist/js/defaultmenu.min.js");
-    loadScript("/dist/js/sticky.js");
+    loadScript("/js/custom.js");
+    loadScript("/js/main.js");
+    loadScript("/js/defaultmenu.min.js");
+    loadScript("/js/sticky.js");
     
   }, []);
 };
