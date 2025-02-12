@@ -4,22 +4,22 @@ const Sidebar = () => {
       <div className="main-sidebar-header">
         <a href="index.html" className="header-logo">
           <img
-            src="/src/assets/images/brand-logos/LOGO-2000X2000_preto_aparado.png"
+            src="/images/brand-logos/LOGO-2000X2000_preto_aparado.png"
             alt="logos"
             className="desktop-logo"
           />
           <img
-            src="../assets/images/brand-logos/toggle-dark.png"
+            src="/images/brand-logos/toggle-dark.png"
             alt="logo"
             className="toggle-dark"
           />
           <img
-            src="../assets/images/brand-logos/desktop-dark.png"
+            src="/images/brand-logos/LOGO-1920X1080 (1).png"
             alt="logo"
             className="desktop-dark"
           />
           <img
-            src="../assets/images/brand-logos/toggle-logo.png"
+            src="/images/brand-logos/toggle-logo.png"
             alt="logo"
             className="toggle-logo"
           />

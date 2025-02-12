@@ -7,22 +7,22 @@ const Header = () => {
             <div className="horizontal-logo">
               <a href="index.html" className="header-logo">
                 <img
-                  src="../assets/images/brand-logos/desktop-logo.png"
+                  src="/images/brand-logos/desktop-logo.png"
                   alt="logos"
                   className="desktop-logo"
                 />
                 <img
-                  src="../assets/images/brand-logos/toggle-logo.png"
+                  src="/images/brand-logos/toggle-logo.png"
                   alt="logo"
                   className="toggle-logo"
                 />
                 <img
-                  src="../assets/images/brand-logos/desktop-dark.png"
+                  src="/images/brand-logos/desktop-dark.png"
                   alt="logo"
                   className="desktop-dark"
                 />
                 <img
-                  src="../assets/images/brand-logos/toggle-dark.png"
+                  src="/images/brand-logos/toggle-dark.png"
                   alt="logo"
                   className="toggle-dark"
                 />
@@ -121,7 +121,7 @@ const Header = () => {
                               <div className="pe-2 lh-1">
                                 <span className="avatar avatar-rounded">
                                   <img
-                                    src="../assets/images/faces/11.jpg"
+                                    src="/images/faces/11.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -152,7 +152,7 @@ const Header = () => {
                               <div className="pe-2 lh-1">
                                 <span className="avatar bg-secondary-transparent avatar-rounded">
                                   <img
-                                    src="../assets/images/faces/21.jpg"
+                                    src="/images/faces/21.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -185,7 +185,7 @@ const Header = () => {
                               <div className="pe-2 lh-1">
                                 <span className="avatar bg-pink-transparent avatar-rounded">
                                   <img
-                                    src="../assets/images/faces/20.jpg"
+                                    src="/images/faces/20.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -248,7 +248,7 @@ const Header = () => {
                               <div className="pe-2 lh-1">
                                 <span className="avatar bg-success-transparent avatar-rounded">
                                   <img
-                                    src="../assets/images/faces/6.jpg"
+                                    src="/images/faces/6.jpg"
                                     alt=""
                                   />
                                 </span>
