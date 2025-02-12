@@ -334,7 +334,7 @@ const Header = () => {
               <div className="d-flex align-items-center">
                 <div className="me-sm-2 me-0">
                   <img
-                    src="/src/assets/images/brand-logos/LOGO-INNOVA.png"
+                    src="/images/brand-logos/LOGO-INNOVA.png"
                     alt="img"
                     className="avatar avatar-sm avatar-rounded"
                   />
