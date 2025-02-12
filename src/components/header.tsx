@@ -8,7 +8,7 @@ const Header = () => {
               <a href="index.html" className="header-logo">
                 <img
                   src="../assets/images/brand-logos/desktop-logo.png"
-                  alt="logo"
+                  alt="logos"
                   className="desktop-logo"
                 />
                 <img
@@ -334,7 +334,7 @@ const Header = () => {
               <div className="d-flex align-items-center">
                 <div className="me-sm-2 me-0">
                   <img
-                    src="../assets/images/faces/9.jpg"
+                    src="/src/assets/images/brand-logos/LOGO-INNOVA.png"
                     alt="img"
                     className="avatar avatar-sm avatar-rounded"
                   />

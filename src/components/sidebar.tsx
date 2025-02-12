@@ -4,8 +4,8 @@ const Sidebar = () => {
       <div className="main-sidebar-header">
         <a href="index.html" className="header-logo">
           <img
-            src="../assets/images/brand-logos/desktop-logo.png"
-            alt="logo"
+            src="/src/assets/images/brand-logos/LOGO-2000X2000_preto_aparado.png"
+            alt="logos"
             className="desktop-logo"
           />
           <img
