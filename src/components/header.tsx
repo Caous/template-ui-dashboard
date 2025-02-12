@@ -34,7 +34,7 @@ const Header = () => {
               aria-label="Hide Sidebar"
               className="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle"
               data-bs-toggle="sidebar"
-              href="javascript:void(0);"
+              href="#"
             >
               <span></span>
             </a>
@@ -44,7 +44,7 @@ const Header = () => {
           <li className="header-element d-md-none d-block">
             <a
               aria-label="anchor"
-              href="javascript:void(0);"
+              href="#"
               className="header-link"
               data-bs-toggle="modal"
               data-bs-target="#header-responsive-search"
@@ -55,7 +55,7 @@ const Header = () => {
           <li className="header-element header-theme-mode">
             <a
               aria-label="anchor"
-              href="javascript:void(0);"
+              href="#"
               className="header-link layout-setting"
             >
               <span className="light-layout">
@@ -68,7 +68,7 @@ const Header = () => {
           </li>
           <li className="header-element notifications-dropdown d-xl-block d-none">
             <a
-              href="javascript:void(0);"
+              href="#"
               className="header-link dropdown-toggle"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
@@ -138,7 +138,7 @@ const Header = () => {
                                 <div>
                                   <a
                                     aria-label="anchor"
-                                    href="javascript:void(0);"
+                                    href="#"
                                     className="min-w-fit-content text-muted me-1 dropdown-item-close1"
                                   >
                                     <i className="ti ti-x fs-16"></i>
@@ -171,7 +171,7 @@ const Header = () => {
                                 <div>
                                   <a
                                     aria-label="anchor"
-                                    href="javascript:void(0);"
+                                    href="#"
                                     className="min-w-fit-content text-muted me-1 dropdown-item-close1"
                                   >
                                     <i className="ti ti-x"></i>
@@ -204,7 +204,7 @@ const Header = () => {
                                 <div>
                                   <a
                                     aria-label="anchor"
-                                    href="javascript:void(0);"
+                                    href="#"
                                     className="min-w-fit-content text-muted me-1 dropdown-item-close1"
                                   >
                                     <i className="ti ti-x"></i>
@@ -234,7 +234,7 @@ const Header = () => {
                                 <div>
                                   <a
                                     aria-label="anchor"
-                                    href="javascript:void(0);"
+                                    href="#"
                                     className="min-w-fit-content text-muted me-1 dropdown-item-close1"
                                   >
                                     <i className="ti ti-x"></i>
@@ -265,7 +265,7 @@ const Header = () => {
                                 <div>
                                   <a
                                     aria-label="anchor"
-                                    href="javascript:void(0);"
+                                    href="#"
                                     className="min-w-fit-content text-muted me-1 dropdown-item-close1"
                                   >
                                     <i className="ti ti-x"></i>
@@ -324,7 +324,7 @@ const Header = () => {
           </li>
           <li className="header-element">
             <a
-              href="javascript:void(0);"
+              href="#"
               className="header-link dropdown-toggle"
               id="mainHeaderProfile"
               data-bs-toggle="dropdown"

@@ -1,8 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { countMessagesPending, countNewCustomer, countNewTicketsSupport, countRecurrenceCustomerMonth } from "../services/whatsappService";
 import { getLastMessages } from "../services/messageService";
+import useScriptLoader from "../hooks/scriptLoader";
 
 const Dashboard = () => {
+  useScriptLoader();
+
   const newCustomerQuery = useQuery({
     queryKey: ["countNewCustomer"],
     queryFn: countNewCustomer,
@@ -47,7 +50,7 @@ const Dashboard = () => {
                 <div className="card custom-card overflow-hidden">
                   <div className="card-body p-0">
                     <div className="mb-2 p-3 pb-0">
-                      <div className="flex-fill fs-15">Novos Leads <br/>-</div>
+                      <div className="flex-fill fs-15">Novos Leads</div>
                     </div>
                     <div className="d-flex align-items-center ps-3">
                       <div className="flex-fill">
@@ -153,7 +156,7 @@ const Dashboard = () => {
                 <div className="card-title">Conversas Whatsapp</div>
                 <div className="dropdown">
                   <a
-                    href="javascript:void(0);"
+                    href="#"
                     className="btn btn-primary-light"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -163,17 +166,17 @@ const Dashboard = () => {
                   </a>
                   <ul className="dropdown-menu" role="menu">
                     <li>
-                      <a className="dropdown-item" href="javascript:void(0);">
+                      <a className="dropdown-item" href="#">
                         Encerradas
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="javascript:void(0);">
+                      <a className="dropdown-item" href="#">
                         Em acompanhamento
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="javascript:void(0);">
+                      <a className="dropdown-item" href="#">
                         Pendentes
                       </a>
                     </li>
@@ -195,8 +198,8 @@ const Dashboard = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {getLastMessagesQuery.data?.map((item) => (
-                          <tr>
+                      {getLastMessagesQuery.data?.map((item, key) => (
+                          <tr key={key}>
                           <td className="text-center">{item.phoneNumber}</td>
                           <td>
                             <div className="d-flex align-items-center">
@@ -220,7 +223,7 @@ const Dashboard = () => {
                             <div className="d-flex align-items-center">
                               <a
                                 aria-label="anchor"
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
@@ -230,7 +233,7 @@ const Dashboard = () => {
                               </a>
                               <a
                                 aria-label="anchor"
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
@@ -266,7 +269,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -276,7 +279,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -311,7 +314,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -321,7 +324,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -356,7 +359,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -366,7 +369,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -401,7 +404,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -411,7 +414,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -446,7 +449,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -456,7 +459,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -491,7 +494,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -501,7 +504,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -536,7 +539,7 @@ const Dashboard = () => {
                           <div className="d-flex align-items-center">
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-primary-light btn-wave me-3 waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
@@ -546,7 +549,7 @@ const Dashboard = () => {
                             </a>
                             <a
                               aria-label="anchor"
-                              href="javascript:void(0);"
+                              href="#"
                               className="btn btn-icon btn-sm btn-secondary-light btn-wave waves-effect waves-light"
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
