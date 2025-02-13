@@ -9,7 +9,7 @@ const Sidebar = () => {
             className="desktop-logo"
           />
           <img
-            src="/images/brand-logos/toggle-dark.png"
+            src="/images/brand-logos/LOGO-INNOVA.png"
             alt="logo"
             className="toggle-dark"
           />
@@ -19,7 +19,7 @@ const Sidebar = () => {
             className="desktop-dark"
           />
           <img
-            src="/images/brand-logos/toggle-logo.png"
+            src="/images/brand-logos/LOGO-INNOVA.png"
             alt="logo"
             className="toggle-logo"
           />

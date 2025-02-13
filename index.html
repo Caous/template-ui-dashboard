@@ -3,20 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
-    
+
     <link
       href="
 https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css
 "
       rel="stylesheet"
     />
+    <link href="/js/libs/simplebar/simplebar.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InnovaSfera</title>
 
     <script src="/js/libs/choices.js/choices.min.js"></script>
+    <script src="/js/libs/simplebar/simplebar.min.js"></script>
+    <script src="/js/libs/@popperjs/popper.min.js"></script>
   </head>
   <body>
+    <div id="loader" class="d-none">
+      <img src="/images/media/loader.svg" alt="" />
+    </div>
     <div id="root" class="page"></div>
+    <!-- Scroll To Top -->
+    <div class="scrollToTop" style="display: none">
+      <span class="arrow"><i class="ti ti-arrow-narrow-up fs-20"></i></span>
+    </div>
+    <div id="responsive-overlay"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -27,6 +27,7 @@ const useScriptLoader = () => {
     loadScript("/js/main.js");
     loadScript("/js/defaultmenu.min.js");
     loadScript("/js/sticky.js");
+    loadScript("/js/simplebar.js");
     
   }, []);
 };
