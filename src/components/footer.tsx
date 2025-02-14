@@ -3,13 +3,12 @@ const Footer = () => {
     <footer className="footer mt-auto py-3 bg-white text-center">
       <div className="container">
         <span className="text-muted">
-          Copyright © <span id="year">2025</span>
-          <a href="#" className="text-dark fw-medium">Udon</a>.
-          Designed with <span className="bi bi-heart-fill text-danger"></span> by
-          <a href="#">
-            <span className="fw-medium text-primary text-decoration-underline">Spruko</span>
+          Copyright © <span id="year">{new Date().getFullYear()}</span>
+          &nbsp;-  by &nbsp;
+          <a href="https://innovasfera.com.br/" target="_blank" rel="noreferrer">
+            <span className="fw-medium text-primary text-decoration-underline">InnovaSpefera</span>
           </a>
-          All rights reserved
+          &nbsp; All rights reserved
         </span>
       </div>
     </footer>
