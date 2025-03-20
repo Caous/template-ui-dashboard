@@ -26,7 +26,7 @@ const ModalGeneric = ({ children, title = "Poup", isOpened, footer, onClose }: P
                     </div>
                     <div className="modal-footer">
                         {footer}
-                        <button type="button" className="btn btn-secondary" onClick={onClose}>Close</button>
+                        <button type="button" className="btn btn-secondary" onClick={onClose}>Fechar</button>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,8 @@ export interface GroupMessage {
     timestamp: number;
     creationTime: string;
   };
+  phoneNumber: string;
+  dateConversation: string;
   conversationId: string;
   messages: Message[];
 }

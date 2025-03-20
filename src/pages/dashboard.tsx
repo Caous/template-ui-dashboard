@@ -207,9 +207,9 @@ const Dashboard = () => {
                     <table className="table text-nowrap table-hover">
                       <thead>
                         <tr>
+                          <th className="crm-table-th2">Nr. Protocolo</th>
                           <th className="text-center">Nr. Cliente</th>
                           <th className="crm-table-th1">Cliente</th>
-                          <th className="crm-table-th2">Nr. Protocolo</th>
                           <th className="crm-table-th2">Data</th>
                           <th className="crm-table-th2">Serviço</th>
                           <th className="crm-table-th2">Status</th>
@@ -219,7 +219,8 @@ const Dashboard = () => {
                       <tbody>
                         {getLastMessagesQuery.data?.map((group, key) => (
                           <tr key={key} onClick={() => setSelectedMessage(group)} style={{ cursor: "pointer" }}>
-                            <td className="text-center">{group.id.creationTime}</td>
+                            <td>{group.conversationId}</td>
+                            <td className="text-center">{group.phoneNumber}</td>
                             <td>
                               <div className="d-flex align-items-center">
                                 <div>
@@ -227,8 +228,7 @@ const Dashboard = () => {
                                 </div>
                               </div>
                             </td>
-                            <td>{group.id.timestamp}</td>
-                            <td>{group.conversationId}</td>
+                            <td>{group.dateConversation}</td>
                             <td></td>
                             <td>
                               <span className="badge bg-success-transparent ps-3 fs-11 order-status complete">
