@@ -218,13 +218,6 @@ const Sidebar = () => {
                           <span className="side-menu__label">Inicio</span>
                         </Link>
                       </li>
-                      <li className="slide">
-                        <Link to="/messages" className="side-menu__item">
-                          <i className="bi bi-whatsapp side-menu__icon"></i>
-                          <span className="side-menu__label">Mensagens</span>
-                        </Link>
-                      </li>
-                   
                     </ul>
                     <div className="slide-right d-none" id="slide-right">
                       <svg
@@ -245,37 +238,37 @@ const Sidebar = () => {
           <div
             className="simplebar-placeholder"
             style={{
-                width: "255px",
-                height: "1366px",
+              width: "255px",
+              height: "1366px",
             }}
           ></div>
         </div>
         <div
           className="simplebar-track simplebar-horizontal"
           style={{
-                visibility: "hidden",
+            visibility: "hidden",
           }}
         >
           <div
             className="simplebar-scrollbar"
             style={{
-                width: "0px",
-                display: "none",
+              width: "0px",
+              display: "none",
             }}
           ></div>
         </div>
         <div
           className="simplebar-track simplebar-vertical"
           style={{
-                visibility: "visible",
+            visibility: "visible",
           }}
         >
           <div
             className="simplebar-scrollbar"
             style={{
-                height: "619px",
-                display: "block",
-                transform: 'translate3d(0px, 0px, 0px)'
+              height: "619px",
+              display: "block",
+              transform: 'translate3d(0px, 0px, 0px)'
             }}
           ></div>
         </div>
