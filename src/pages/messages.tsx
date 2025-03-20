@@ -1,6 +1,3 @@
-
-// Interfaces para tipar os dados
-
 import { useQuery } from "@tanstack/react-query";
 import { getGroupMessages } from "../services/messageService";
 import { GroupMessage } from "../models/GroupMessage";

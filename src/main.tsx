@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/dashboard.tsx";
 import Messages from "./pages/messages.tsx";
+import "./assets/css/styles.css"
 
 // Create a client
 const queryClient = new QueryClient();
