@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <aside className="app-sidebar sticky" id="sidebar">
@@ -70,7 +72,7 @@ const Sidebar = () => {
                         marginRight: "0px",
                       }}
                     >
-                      <li className="slide has-sub active open">
+                      {/* <li className="slide has-sub active open">
                         <a
                           href="#"
                           className="side-menu__item active"
@@ -106,61 +108,6 @@ const Sidebar = () => {
                           <li className="slide">
                             <a href="index-1.html" className="side-menu__item">
                               Analytics
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-2.html" className="side-menu__item">
-                              Ecommerce
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-3.html" className="side-menu__item">
-                              Crm
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-4.html" className="side-menu__item">
-                              HRM
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-5.html" className="side-menu__item">
-                              NFT
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-6.html" className="side-menu__item">
-                              Crypto
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-7.html" className="side-menu__item">
-                              Jobs
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-8.html" className="side-menu__item">
-                              Projects
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-9.html" className="side-menu__item">
-                              Courses
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-10.html" className="side-menu__item">
-                              Stocks
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-11.html" className="side-menu__item">
-                              Personal
-                            </a>
-                          </li>
-                          <li className="slide">
-                            <a href="index-12.html" className="side-menu__item">
-                              Customer
                             </a>
                           </li>
                         </ul>
@@ -264,13 +211,20 @@ const Sidebar = () => {
                             </a>
                           </li>
                         </ul>
+                      </li> */}
+                      <li className="slide">
+                        <Link to="/" className="side-menu__item">
+                          <i className="bi bi-shop side-menu__icon"></i>
+                          <span className="side-menu__label">Inicio</span>
+                        </Link>
                       </li>
                       <li className="slide">
-                        <a href="icons.html" className="side-menu__item">
-                          <i className="bi bi-shop side-menu__icon"></i>
-                          <span className="side-menu__label">Icons</span>
-                        </a>
+                        <Link to="/messages" className="side-menu__item">
+                          <i className="bi bi-whatsapp side-menu__icon"></i>
+                          <span className="side-menu__label">Mensagens</span>
+                        </Link>
                       </li>
+                   
                     </ul>
                     <div className="slide-right d-none" id="slide-right">
                       <svg
